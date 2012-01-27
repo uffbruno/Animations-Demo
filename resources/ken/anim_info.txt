@@ -1,0 +1,29 @@
+#still left
+frames//18.PNG
+.
+
+#still right
+frames//17.PNG
+.
+
+#walking left
+frames//9.PNG
+frames//10.PNG
+frames//11.PNG
+frames//12.PNG
+frames//13.PNG
+frames//14.PNG
+frames//15.PNG
+frames//16.PNG
+.
+
+#walking right
+frames//1.PNG
+frames//2.PNG
+frames//3.PNG
+frames//4.PNG
+frames//5.PNG
+frames//6.PNG
+frames//7.PNG
+frames//8.PNG
+.

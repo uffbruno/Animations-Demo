@@ -1,0 +1,43 @@
+#animation frames for walking up
+frames//1.PNG
+frames//2.PNG
+frames//3.PNG
+frames//2.PNG
+.
+
+#animation frames for walking left
+frames//4.PNG
+frames//5.PNG
+frames//6.PNG
+frames//5.PNG
+.
+
+#animation frames for walking right
+frames//7.PNG
+frames//8.PNG
+frames//9.PNG
+frames//8.PNG
+.
+
+#animation frames for walking down
+frames//10.PNG
+frames//11.PNG
+frames//12.PNG
+frames//11.PNG
+.
+
+#animation frame for standing still, looking up
+frames//2.PNG
+.
+
+#animation frame for standing still, looking left
+frames//5.PNG
+.
+
+#animation frame for standing still, looking right
+frames//8.PNG
+.
+
+#animation frame for standing still, looking down
+frames//11.PNG
+.
