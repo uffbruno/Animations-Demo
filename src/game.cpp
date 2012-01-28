@@ -106,18 +106,6 @@ void game::run() {
             al_draw_text(infofont, al_map_rgb(255,255,255), 640/2, 30, ALLEGRO_ALIGN_CENTRE, 
                 "Press arrow keys to move character; ESC to exit");
             
-            //debug text
-            //al_draw_textf(debugfont, al_map_rgb(255,255,255), 0, 480-100, ALLEGRO_ALIGN_LEFT, 
-            //    "mychar->state = %d", mychar->get_state());
-            //al_draw_textf(debugfont, al_map_rgb(255,255,255), 0, 480-80, ALLEGRO_ALIGN_LEFT, 
-            //    "key[KEY_UP] = %d", keys[KEY_UP]);
-            //al_draw_textf(debugfont, al_map_rgb(255,255,255), 0, 480-60, ALLEGRO_ALIGN_LEFT, 
-            //    "key[KEY_LEFT] = %d", keys[KEY_LEFT]);
-            //al_draw_textf(debugfont, al_map_rgb(255,255,255), 0, 480-40, ALLEGRO_ALIGN_LEFT, 
-            //    "key[KEY_RIGHT] = %d", keys[KEY_RIGHT]);
-            //al_draw_textf(debugfont, al_map_rgb(255,255,255), 0, 480-20, ALLEGRO_ALIGN_LEFT, 
-            //    "key[KEY_DOWN] = %d", keys[KEY_DOWN]);
-
             for (unsigned int i = 0; i < chars.size(); ++i) {
                 chars[i]->draw();
             }

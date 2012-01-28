@@ -1,0 +1,65 @@
+ANIMATION DEMO
+--------------
+
+Change History
+--------------
+01-27-2011 - First version of README.
+
+Author
+------
+Created by Bruno Oliveira
+uffbruno@gmail.com
+
+Dependencies
+------------
+- Allegro 5: to build the demo, you'll need Allegro 5 (http://alleg.sourceforge.net/). Follow it's instructions to build the static libs (or download the precompiled binary versions), since these are what the demo uses (for distribution purposes). You can look at the makefile, the variable A5LINKLIBS describes all libs used to build Animation Demo.
+
+- This demo was built using MingW for Windows. In the future, i might include a Linux version of the makefile for building on Linux machines, but you are free to modify the makefile if you know what you're doing (it shouldn't be too hard).
+
+How it works
+------------
+The Animation Demo loads three sets of sprites from the 'resources' directory. These are:
+- resources/ken
+- resources/mariobros
+- resources/rpgmaker
+
+Each of these directories have a text file named 'anim_info.txt'. This file points to the location of the various image files that will compose the sprite frames. You are free to change this file (see ANIM_INFO.TXT below for the file format).
+
+Animation Demo uses these text files to load the frames. When it's done, the sprites are displayed on screen.
+
+Instructions
+------------
+You can control the sprites' position using the arrow keys on the keyboard. The Ken and MarioBros sprites will only move left or right, while the Rpg Maker sprite will also move up and down. All sprites move together, and the animation can be seen when they move.
+
+Left Key: Move sprites left
+Right Key: Move sprites right
+Up Key: Move sprites up
+Down Key: Move sprites down
+ESC Key: Quit demo
+
+Anim_info.txt
+-------------
+The anim_info.txt file format is fairly simple. Let's see an example:
+
+#First animation
+/path/to/file/frame1.png
+/path/to/file/frame2.png
+/path/to/file/frame3.png
+.
+
+#second animation
+/path/to/file/frame4.png
+/path/to/file/frame5.png
+.
+
+In the example above, we have two sets of frames. Each set of frames composes an animation. So we have two animations.
+The first one uses frame1.png, frame2.png and frame3.png, and the second one uses frame4.png and frame5.png. Note that these names and directory paths are just examples. You can use any name you like, and any number of sets (the example just uses two).
+
+To separate the sets of animations, we use a dot [.] It indicates that set composes an animation, and what comes next is part of the next animation.
+If a line starts with '#', it's a comment. If it is an empty line, it's ignored (so you can add that space between frame sets to make the file more readable).
+
+Restrictions
+------------
+In this version of the Animation Demo, we have two 2d characters (Ken and Mario) and a RPG character (the one of RPG Maker). The anim_demo.txt of each of these sprites are reflections of the animations present on each one. Ken and Mario only have animations for walking left and right, and standing still left and right. The rpg character has additional animations for walking and standing still, up and down. If any of the sets of frames in the corresponding anim_info.txt is removed, the program will crash. You can add and remove frames for each frameset, but don't remove the framesets themselves. This will be more flexible in a future version, but for now, deal with it (or download the source code and modify it at will).
+
+Another limitation is that the file with animation information must be called 'anim_info.txt', since that is the file the Animation Demo will look for. This one i do not intent on changing, to set up a standard
